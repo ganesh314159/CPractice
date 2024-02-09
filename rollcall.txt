@@ -1,0 +1,35 @@
+# Actual Code
+# 2000 is address
+# where we store our code.
+
+# Set then enter memory address.
+# Then increment.
+0000 21 LXI
+# Increament
+0001 00 # LSB
+0002 C1 # MSB
+0003 7E MOV A,M
+0004 4F MOV C,A
+0005 0D DCR C
+0006 86 ADD M
+0007 0D DCR C
+0008 C2 JNZ
+0009 06 # LSB
+000A 00 # MSB
+000B 32 STA
+000C 01 # LSB
+000D C1 # MSB
+000E 76
+# RESET
+# SET, Enter memory address, then increament.
+C100 05
+# Increament
+# RESET
+# GO, Enter memory address of code.
+# Execute - processes code.
+# Shows success.
+# RESET 
+# SET, enter memory address of result.
+# Increament
+C101 (RESULT)
+

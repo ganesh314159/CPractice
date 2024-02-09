@@ -2,13 +2,13 @@
 
 void main(){
     int C,D,T;
-    printf("Enter first number : ");
+    printf("Enter value for C : ");
     scanf("%d",&C);
-    printf("Enter second number : ");
+    printf("Enter value for D : ");
     scanf("%d",&D);
-    printf("\nBefore swaping C=%d and D=%d",C,D);
+    printf("\nBefore swapping C=%d and D=%d",C,D);
     T=D;
     D=C;
     C=T;
-    printf("\nAfter swaping C=%d and D=%d",C,D);
+    printf("\nAfter swapping C=%d and D=%d",C,D);
 }

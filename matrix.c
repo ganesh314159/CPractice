@@ -4,6 +4,7 @@ int main()
 {   
     // Declaring initial matrices
     int i, j;
+
     int matA[3][3] = {
         {1, 1, 1},
         {1, 1, 5},
@@ -15,18 +16,38 @@ int main()
         {2, 2, 2}
         };
 
+    // Printing Matrix on Console.
+    int printMat(int mat[3][3]){
+        for (i=0; i<3; i++)
+        {
+            for (j=0; j<3; j++)
+            {
+                printf("%d ", mat[i][j]);
+            }
+            printf("\n");
+        };
+        return 0;
+    }
+
     // Addition of Matrices
-    int matC[3][3];
-    for (i=0; i<3; i++){
-        for (j=0; j<3; j++){
-            matC[i][j] = matA[i][j] + matB[i][j];
-        }
-    };
+    int **addMat(int matA[3][3], int matB[3][3])
+    {
+        int matC[3][3];
+        for (i=0; i<3; i++)
+        {
+            for (j=0; j<3; j++)
+            {
+                matC[i][j] = matA[i][j] + matB[i][j];
+            }
+        };
+        return matC;
+    }
 
     // Subtarction of Matrices
     int matD[3][3];
     for (i=0; i<3; i++){
-        for (j=0; j<3; j++){
+        for (j=0; j<3; j++)
+        {
             matD[i][j] = matA[i][j] - matB[i][j];
         }
     };
@@ -47,14 +68,7 @@ int main()
     //     }
     // };
 
-    // Printing Matrix on Console.
-    for (i=0; i<3; i++){
-        for (j=0; j<3; j++){
-            printf("%d ", matE[i][j]);
-        }
-        printf("\n");
-    };
-
+    printMat(matE);
     return 0;
 }
 

@@ -1,0 +1,11 @@
+start
+define i,j
+i=0, j=6
+add i and j
+
+
+
+
+
+
+
