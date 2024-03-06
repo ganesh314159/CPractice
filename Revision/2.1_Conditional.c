@@ -7,11 +7,12 @@ void main(){
     //     // codeblock
     //     printf("a is b");
     // }
+
     // If else
     // if(a&&b){
     //     printf("a is b");
     // }else if(a==b){
-
+    //     printf("a equals b");
     // }else{
     //     printf("a is not b");
     // }
@@ -19,7 +20,7 @@ void main(){
     // Switch
     // Only integer and character='A'
     int a='A',b='C';
-    switch(a+b){
+    switch(a){
         case 'A':
             printf("\nThis is case 1.");
             break;

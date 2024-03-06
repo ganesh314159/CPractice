@@ -22,20 +22,18 @@ void main(){
     // Arithmetic Instruction
     // int a,b,c;
     // a = 5;
-    // b=2;
+    // b = 2;
     // c = a%b;
     // printf("\n%d",c);
 
     // Integer and Float Conversions
-    // int a=2;
-    // float b=4.5;
+    // int a = 2;
+    // float b = 4.5;
     // float c;
 
     // c = a*b;
     // printf("%f",c);
-    int a;
-    scanf("%d", &a);
-    printf("%d",a);
-
-
+    // int a;
+    // scanf("%d", &a);
+    // printf("%d",a);
 }
